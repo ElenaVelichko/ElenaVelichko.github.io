@@ -170,26 +170,24 @@ body {
 }
 .header__link {
   border: 1px solid transparent;
+  border-radius: 16px;
+  line-height: 12px;
   margin: 0 3px 20px 3px;
   padding: 10px 18px;
   position: relative;
-  -webkit-transition: color 0.25s;
-  -o-transition: color 0.25s;
-  transition: color 0.25s;
   cursor: pointer;
   color: #ffffff;
   font-size: 16px;
-  line-height: 12px;
 }
 .header__link:hover {
-  border-radius: 16px;
   border: 1px solid #ffffff;
   -webkit-box-shadow: 0 0 2px 1px #ffffff;
   box-shadow: 0 0 2px 1px #ffffff;
 }
 .header__link--active {
-  border-radius: 16px;
   border: 1px solid #ffffff;
+  -webkit-box-shadow: 0 0 2px 1px #ffffff;
+  box-shadow: 0 0 2px 1px #ffffff;
 }
 .header__info {
   text-align: center;
@@ -208,16 +206,10 @@ body {
   margin: 0 auto;
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
 }
 .header__scroll:hover {
   -webkit-box-shadow: 0 0 2px 1px #ffffff;
   box-shadow: 0 0 2px 1px #ffffff;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
 }
 .header__arrow-link {
   display: block;
@@ -250,7 +242,6 @@ body {
 .portfolio__menu {
   padding-top: 18px;
   list-style: none;
-  padding-left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -277,7 +268,6 @@ body {
   -webkit-transition: width 0.3s ease-in-out;
   -o-transition: width 0.3s ease-in-out;
   transition: width 0.3s ease-in-out;
-  background-color: #ffffff;
   bottom: 0;
   right: 20%;
 }
@@ -290,7 +280,6 @@ body {
   -webkit-transition: width 0.3s ease-in-out;
   -o-transition: width 0.3s ease-in-out;
   transition: width 0.3s ease-in-out;
-  background-color: #ffffff;
   bottom: 0;
   left: 20%;
 }
@@ -313,8 +302,7 @@ body {
 .portfolio__works {
   max-width: 1120px;
   margin: 0 auto;
-  padding-top: 50px;
-  padding-bottom: 92px;
+  padding: 50px 0 92px;
 }
 .grid-item {
   margin-bottom: 12px;
@@ -341,6 +329,9 @@ body {
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .team__about {
   text-align: right;
@@ -398,7 +389,7 @@ body {
   line-height: 37px;
   vertical-align: middle;
   border-radius: 18px;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
 }
 .stub__link:hover {
   color: #19bd9a;

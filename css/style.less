@@ -82,26 +82,23 @@ body {
 	}
 	&__link {
 	    border: 1px solid @color_transparent;
+	    border-radius: 16px;
 		line-height: 12px;
 		margin: 0 3px 20px 3px;
 		padding: 10px 18px;
 		position: relative;
-		transition: color 0.25s;
 		cursor: pointer;
 		color: @color_light;
 		font-size: 16px;
-		line-height: 12px;
 	    &:hover {
-	      border-radius: 16px;
 	      border: 1px solid @color_light;
 	      box-shadow: 0 0 2px 1px @color_light;
 	    }
 	    &--active {
-	      border-radius: 16px;
 	      border: 1px solid @color_light;
+	      box-shadow: 0 0 2px 1px @color_light;
 	    }
 	}
-
 	&__info {
 		text-align: center;
 		padding: 180px 0 220px;
@@ -119,10 +116,10 @@ body {
 		margin: 0 auto;
 		position: absolute;
 		left: 50%;
-		transform: translateX(-50%);
+		// transform: translateX(-50%);
 		&:hover {
 			box-shadow: 0 0 2px 1px @color_light;
-			transform: translateX(-50%);
+			// transform: translateX(-50%);
 		}
 	}
 	&__arrow-link {
@@ -160,7 +157,6 @@ body {
 	&__menu {
 		padding-top: 18px;
 		list-style: none;
-		padding-left: 0;
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
@@ -179,7 +175,6 @@ body {
 			height: 2px;
 			width: 0;
 			transition: width .3s ease-in-out;
-			background-color: @color_light;
 			bottom: 0;
 			right: 20%;
 		}
@@ -190,7 +185,6 @@ body {
 			height: 2px;
 			width: 0;
 			transition: width .3s ease-in-out;
-			background-color: @color_light;
 			bottom: 0;
 			left: 20%;
 		}
@@ -218,8 +212,7 @@ body {
 	&__works {
 		max-width: 1120px;
 		margin: 0 auto;
-		padding-top: 50px;
-		padding-bottom: 92px;
+		padding: 50px 0 92px;
 	}
 }
 
@@ -245,6 +238,7 @@ body {
 	border: none;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	display: flex;
 	&__about {
 		text-align: right;
 		max-width: 420px;
@@ -278,7 +272,6 @@ body {
 	}
 }
 
-
 .stub {
 	background: #000 url("../img/bg-contact.png") 50% no-repeat;
 	min-height: 200px;
@@ -303,7 +296,7 @@ body {
 		line-height: 37px;
 		vertical-align: middle;
 		border-radius: 18px;
-		border: 1px solid #fff;
+		border: 1px solid @color_light;
 		&:hover {
 			color: @color_green;
 			border-color: @color_green;
@@ -357,8 +350,6 @@ body {
 		line-height: 20px;
 	}
 }
-
-
 
 .footer {
 	padding-top: 72px;

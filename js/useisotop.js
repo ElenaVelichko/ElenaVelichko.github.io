@@ -13,7 +13,7 @@
         });
 
         var applyFilterFromLink = (linkObject) => {
-            let filterValue = linkObject.dataset.filter;
+            var filterValue = linkObject.dataset.filter;
             iso.arrange({ filter: filterValue });
         };
 
@@ -21,11 +21,11 @@
 
             applyFilterFromLink(this);
 
-            let activeBtn = document.querySelector('.portfolio__item--active');
+            var activeBtn = document.querySelector('.portfolio__item-active');
             if (activeBtn) {
-                activeBtn.classList.remove('portfolio__item--active');
+                activeBtn.classList.remove('portfolio__item-active');
             }
-            this.classList.add('portfolio__item--active');
+            this.classList.add('portfolio__item-active');
         };
 
 
@@ -50,13 +50,11 @@
             filterBtn.addEventListener( 'click', filterGrid);
         });
 
-        var activeBtn = document.querySelector('.portfolio__item--active');
+        var activeBtn = document.querySelector('.portfolio__item-active');
 
         applyFilterFromLink(activeBtn);
 
     }
-
-
 
 
     document.addEventListener('DOMContentLoaded', useIsotope);
